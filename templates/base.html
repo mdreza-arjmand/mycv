@@ -1,0 +1,141 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <meta name="copyright" content="MACode ID, https://www.macodeid.com/">
+  
+  <title>Mdreza Arjmand</title>
+
+  <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+  
+  <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+  
+  <link rel="stylesheet" type="text/css" href="{% static 'css/themify-icons.css' %}">
+  
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">
+
+  <link rel="stylesheet" type="text/css" href="{% static  'vendor/animate/animate.css' %}">
+  
+  <link rel="stylesheet" type="text/css" href="{% static  'vendor/owl-carousel/owl.carousel.css' %}">
+  
+  <link rel="stylesheet" type="text/css" href="{% static  'vendor/nice-select/css/nice-select.css' %}">
+  
+  <link rel="stylesheet" type="text/css" href="{% static  'vendor/fancybox/css/jquery.fancybox.min.css' %}">
+  
+  <link rel="stylesheet" type="text/css" href="{% static 'css/virtual.css' %}">
+  
+  <link rel="stylesheet" type="text/css" href="{% static 'css/topbar.virtual.css' %}">
+</head>
+<body class="theme-green">
+  
+  <!-- Back to top button -->
+  <div class="btn-back_to_top">
+    <span class="ti-arrow-up"></span>
+  </div>
+
+  <!-- Home page-->
+  <div class="vg-page">
+    <!-- Navbar -->
+    <div class=" justify-content-center text-center navbar navbar-expand-lg navbar-dark sticky" data-offset="500" style="background-color: #171925; width:100%;">
+      <div class="container">
+        <a href="" class="navbar-brand">Mdreza Arjmand</a>
+        <button class="navbar-toggler" data-toggle="collapse"  aria-expanded="true">
+          <span class="ti-menu"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+        
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item ">  
+            
+              <a href="{% url 'website:index' %}" class="nav-link" >Home</a>
+            </li>
+
+                  <li class="nav-item"> 
+            
+              <a href="{% url 'website:about' %}" class="nav-link" >About</a>
+                  </li>
+                  <li class="nav-item"> 
+            
+              <a href="{% url 'website:contact' %}" class="nav-link" >Contact</a>
+            </li>
+          </ul>
+          <ul class="nav ml-auto">
+            <li class="nav-item">
+            </li>
+          </ul>
+        
+        </div>
+      </div>
+    </div> <!-- End Navbar -->
+  </div>
+  
+  <!-- End Home page-->
+
+        {% block content%}
+
+        {% endblock %}
+
+ 
+  <!-- Footer -->
+  <div class="vg-footer">
+    <h1 class="text-center">Mdreza Arjmand</h1>
+    <div class="container">
+      <div class="row justify-content-center">
+      
+        <div class="col-md-6 col-lg-4 py-3 justify-content-center">
+          <div class="float-lg-right">
+            <p class="text-center" style="color:red">Contact me</p>
+            <div class="text-center">
+            <ul class="list-unstyled">
+              <li>mohammadreza.arjmand@outlook.com</li>
+              <li>+989375243680</li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="row justify-content-center mt-3">
+      
+        <div class="col-12">
+          <p class="text-center mb-0 mt-4">Copyright &copy;2020. All right reserved | This template is made by <a href="https://www.macodeid.com/">MACode ID</a></p>
+        </div>
+      </div>
+
+    </div>
+  </div> <!-- End footer -->
+  
+  
+  <script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
+    
+  <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    
+  <script src="{% static 'vendor/owl-carousel/owl.carousel.min.js' %}"></script>
+    
+    
+  <script src="{% static 'vendor/isotope/isotope.pkgd.min.js' %}"></script>
+    
+  <script src="{% static 'vendor/nice-select/js/jquery.nice-select.min.js' %}"></script>
+    
+  <script src="{% static 'vendor/fancybox/js/jquery.fancybox.min.js' %}"></script>
+
+  <script src="{% static 'vendor/wow/wow.min.js' %}"></script>
+
+  <script src="{% static 'vendor/animateNumber/jquery.animateNumber.min.js' %}"></script>
+
+  <script src="{% static 'vendor/waypoints/jquery.waypoints.min.js' %}"></script>
+
+  <script src="{% static 'js/google-maps.js' %}"></script>
+    
+  <script src="{% static 'js/topbar-virtual.js' %}"></script>
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIA_zqjFMsJM_sxP9-6Pde5vVCTyJmUHM&callback=initMap"></script>
+  
+</body>
+</html>

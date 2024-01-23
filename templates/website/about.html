@@ -1,0 +1,48 @@
+{% extends 'base.html'%}
+{% load static%}
+
+{% block content%}
+
+   
+  <!-- About page-->
+  <div class="vg-page page-about" id="about">
+    <div class="container py-5" >
+      <div class="text-center wow fadeInUp">
+        <div class="badge badge-subhead">About</div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 py-3">
+          <div class="img-place wow fadeInUp">
+            <img src="{% static 'img/person.jpg' %}" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 offset-lg-1 wow fadeInRight">
+          <h1 class="fw-light">Mohammad Reza Arjmand</h1>
+          <h5 class="fg-theme mb-3">UI/UX & Web Designer</h5>
+          <p>I am Mohammadreza Arjmand. I'm
+            passionate about building creative and functional websites. With a background in philosophy,
+            I bring a unique perspective to the world of programming and software development. </br>
+            Studying philosophy has equipped me with essential skills like critical thinking, problem-solving, and logical analysis—all of which are directly applicable to programming. I firmly believe that these skills allow me to approach coding challenges with a fresh perspective, fostering innovative solutions.
+          </br>
+            I am known for my quick learning ability and unwavering enthusiasm towards web development. I find joy in acquiring new knowledge and applying it to real-world projects. To enhance my programming skills, I have taken online courses on Python and am currently focusing on mastering Django—a powerful framework for web development.
+            
+            In addition to my technical expertise, I am fluent in English and actively working on improving my proficiency in German. Being bilingual allows me to communicate and collaborate effectively with individuals from diverse backgrounds, creating a harmonious and inclusive work environment.
+        </br>
+            Apart from coding, I indulge in a few hobbies during my free time. Reading books is mostly 
+            the most fun one, especially when they're about philosophy or self-improvement. I also enjoy listining to Music from 1960s and 70s.
+            Additionally, I am an ardent practitioner of yogic exercises,
+            which provide me with mental clarity, physical well-being, and a balanced approach towards life.</p>
+          <ul class="theme-list">
+            
+            <li><b>Lives In:</b> Isfahan, Iran</li>
+            <li><b>Age:</b> 25</li>
+            <li><b>Gender:</b> Male</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End About page-->
+
+  
+{% endblock%}
